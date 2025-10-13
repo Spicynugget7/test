@@ -6,7 +6,7 @@
 --   return __RT
 -- The resulting file still requires a Luau/executor to run (due to `continue`, etc.).
 
-local inpath, outpath, dumpname = arg[1], arg[2], arg[3] or "vw99n_dump.lua"
+local inpath, outpath, dumpname = arg[1], arg[2], arg[3] or "deobf.lua"
 if not inpath or not outpath then
   io.stderr:write("Usage: lua tools/inject_hook.lua <infile> <outfile> [dump_name]\n")
   os.exit(1)
